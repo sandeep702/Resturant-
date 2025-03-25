@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import logo from "../../images/colored_logo.svg";
-import Theme from "./Theme"; // Importing Theme.js
+import Theme from "./Theme"; 
 
 const Header = () => {
   const [btnName, setBtnName] = useState("Login");
+  
 
   return (
     <div className="header ">
@@ -22,16 +23,15 @@ const Header = () => {
           <li><Link to="/contact">Contact Us</Link></li>
           <li><Link to="grocery">Grocery</Link></li>
           <li><Link to="/cart">🛒Cart</Link></li>
-
-          <button
+          <Theme />{/* Theme.js component calling  */} 
+          <Link to="login"> 
+          <button 
             className="login-btn"
             onClick={() => setBtnName(btnName === "Login" ? "Logout" : "Login")}
           >
-            {btnName}
-          </button>
-
-          {/* Theme Switcher */}
-          <Theme />
+      {btnName}  
+          </button></Link>  
+          
         </ul>
       </div>
     </div>

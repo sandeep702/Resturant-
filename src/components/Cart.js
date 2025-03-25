@@ -57,7 +57,16 @@ const Cart = () => {
         >
           🗑️ Clear Cart
         </button>
+     
       </div>
+      <div>
+            <p className="login text-center flex justify-center text-semibold font-serif text-2xl text-red-500 pt-40 mb-10 ">
+                 functionalities are still pending.
+            </p>
+            <h1 className="login text-center flex justify-center text-semibold font-serif text-2xl text-red-500 pt-50 mb-10 ">
+                will make it soon
+            </h1>
+</div>
     </div>
   );
 };

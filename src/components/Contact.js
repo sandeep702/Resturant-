@@ -115,8 +115,8 @@ const Contact = () => {
           ))}
         </div>
       </motion.div>
+<Footer />
 
-      <Footer />
     </motion.div>
   );
 };
